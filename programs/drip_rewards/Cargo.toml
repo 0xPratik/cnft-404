@@ -1,0 +1,29 @@
+[package]
+name = "drip_rewards"
+version = "0.1.0"
+description = "Created with Anchor"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "drip_rewards"
+
+[features]
+default = []
+cpi = ["no-entrypoint"]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+idl-build = ["anchor-lang/idl-build","anchor-spl/idl-build"]
+
+
+[dependencies]
+anchor-lang = {version = "0.30.0", features = ["init-if-needed"]}
+anchor-spl = "0.30.0"
+# mpl-core = { version = "0.7.0", features = ["anchor"] }
+mpl-bubblegum = { version = "1.4.0" }
+spl-account-compression = { version = "0.3.0", features = [
+    "no-entrypoint",
+    "cpi",
+] }
+arrayref = "0.3.7"
