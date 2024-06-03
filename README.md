@@ -48,8 +48,8 @@ The Anchor program contains the following instructions :-
 
 1. Clone the repository:
    ```bash
-   $ git clone <repository-url>
-   $ cd <repository-directory>
+   $ git clone https://github.com/0xPratik/cnft-404.git
+   $ cd cnft-404
    ```
 2. Install Dependencies:
    ```bash
