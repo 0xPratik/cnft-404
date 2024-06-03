@@ -5,7 +5,7 @@ resolution = true
 skip-lint = false
 
 [programs.localnet]
-drip_rewards = "G3A8CSd2ifSBZJym1z3LP53uqp1wZfFUHXxJp5zgtceR"
+cnft_404 = "G3A8CSd2ifSBZJym1z3LP53uqp1wZfFUHXxJp5zgtceR"
 
 [registry]
 url = "https://api.apr.dev"
