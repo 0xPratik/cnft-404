@@ -18,11 +18,11 @@ Compressed NFT 404 is a Solana-based program designed to implement the 404 dynam
 
 As Drip is the biggest issuer of CNFTs on Solana, here are some use cases based on its mechanism:
 
-Single Creator Pool: A Drip Creator can set up a 404 pool with CNFTs from their collection.
+**Single Creator Pool:** A Drip Creator can set up a 404 pool with CNFTs from their collection.
 
-Collaborative Pool: Multiple Drip Creators can partner to create a single pool with CNFTs and a token at a set price. The token could be a memecoin or a new T22 token.
+**Collaborative Pool:** Multiple Drip Creators can partner to create a single pool with CNFTs and a token at a set price. The token could be a memecoin or a new T22 token.
 
-Legendary CNFT: A Drip Creator could seed the pool with legendary CNFTs and let the users decide who gets it through the re-roll mechanism.
+**Legendary CNFT:** A Drip Creator could seed the pool with legendary CNFTs and let the users decide who gets it through the re-roll mechanism.
 
 ## Technical Overview
 
