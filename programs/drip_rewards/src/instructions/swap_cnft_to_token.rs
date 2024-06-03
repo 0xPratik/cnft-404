@@ -55,6 +55,7 @@ pub struct SwapCnft<'info> {
         associated_token::mint = mint,
     )]
     pub authority_token_account: Account<'info, TokenAccount>,
+    ///CHECK: Checked in CPI
     pub tree_authority: UncheckedAccount<'info>,
     ///CHECK: Checked in CPI
     pub merkle_tree: UncheckedAccount<'info>,

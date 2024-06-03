@@ -41,6 +41,7 @@ pub struct SwapTokenToCnft<'info> {
 
     pub associated_token_program: Program<'info, AssociatedToken>,
     #[account(address = sysvar::slot_hashes::id())]
+    /// CHECK: This is a sysvar
     pub recent_slot_hashes: UncheckedAccount<'info>,
     pub system_program: Program<'info, System>,
 }

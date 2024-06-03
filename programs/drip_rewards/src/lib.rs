@@ -7,7 +7,7 @@ pub use error::ErrorCode;
 pub use instructions::*;
 pub use state::*;
 
-declare_id!("FChXDk5krMuZUcYoYQq7KxDcwwzSAHwJwq6kMTvN9Kbc");
+declare_id!("G3A8CSd2ifSBZJym1z3LP53uqp1wZfFUHXxJp5zgtceR");
 
 #[program]
 pub mod drip_rewards {
@@ -27,5 +27,23 @@ pub mod drip_rewards {
         args: DepositCnftArgs,
     ) -> Result<()> {
         deposit_cnft::handler(ctx, args)
+    }
+
+    pub fn swap_token_to_cnft<'info>(ctx: Context<SwapTokenToCnft>) -> Result<()> {
+        swap_token_to_cnft::handler(ctx)
+    }
+
+    pub fn claim_cnft<'info>(
+        ctx: Context<'_, '_, '_, 'info, ClaimCnft<'info>>,
+        args: ClaimCnftArgs,
+    ) -> Result<()> {
+        claim_cnft::handler(ctx, args)
+    }
+
+    pub fn swap_cnft_to_token<'info>(
+        ctx: Context<'_, '_, '_, 'info, SwapCnft<'info>>,
+        args: SwapCnftArgs,
+    ) -> Result<()> {
+        swap_cnft_to_token::handler(ctx, args)
     }
 }
